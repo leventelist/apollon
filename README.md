@@ -5,16 +5,16 @@ Printed Circuit Board editor.
 Hystory
 =======
 
-While I was in the air while I was traveling to/from Greece, I decided to
-write a new data structure for gEDA/PCB. Not because it is unusable,
-but I wanted to have one place for the layout data, and other
-attributes, like mechanical data, schematic symbol. The whole thing stared
-out as a small parser of pcb files that puts everything to an SQLite database.
+While I was in the air traveling to/from Greece, I decided to write a new data
+structure for gEDA/PCB. Not because it is unusable, but I wanted to have one
+place for the layout data, and other attributes, like mechanical data,
+schematic symbol. The whole thing stared out as a small parser of pcb files
+that puts everything to an SQLite database.
 
 After a while an idea came that what I was really doing, is defining a new
 data structure and file format for pcb. My mind went further, and realised
 that the current gEDA/pcb lacks lots of feature, and a new tool must be
-created to be able to achieve the goals a professional EDA tool.
+created to be able to achieve the goals of a professional EDA tool.
 
 In Greek mythology, Aplollo is the God of knowledge, music, art and healing.
 Apollon is how Hungarian people spell Apollo. I hope this tool will help
@@ -32,7 +32,7 @@ implemented on the top of current pcb functionality.
  * The user can edit footprints by using the GUI.
  * The user can draw arbitrary padstacks.
  * No concept of footprint, just embedded layouts.
- * Buried VIAs
+ * Blind and buried VIAs
 
 
 What we have today
@@ -48,11 +48,10 @@ That is not much, I know.
 Roadmap
 =======
 
- * Write the basic structure of the GUI
  * Write a parser of the data structures
  * Write an engine that can display primitive shapes
+ * Either weld this to gEDA/pcb, or create a new tool
  * The rest will come :-)
-
 
 Technology
 ==========
@@ -60,6 +59,8 @@ Technology
  * SQLite for data storage
  * FLTK for the GUI toolkit
  * git for VCS.
+ * Cmake for configuration management
+ * C++
 
 
 Author
@@ -67,5 +68,5 @@ Author
 
 leventelist@gmail.com
 
-2015-09-02
+I hope more will join.
 
